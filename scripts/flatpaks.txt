@@ -1,0 +1,3 @@
+com.vivaldi.Vivaldi
+md.obsidian.Obsidian
+com.spotify.Client

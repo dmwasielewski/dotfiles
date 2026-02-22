@@ -1,0 +1,3 @@
+{
+    (modifiers: [Super], key: "t"): Spawn("alacritty"),
+}

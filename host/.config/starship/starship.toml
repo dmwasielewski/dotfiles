@@ -1,0 +1,60 @@
+format = """
+$time $directory$git_branch$git_status$python$nodejs$container$line_break$jobs$status$cmd_duration$character"""
+
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+style = "dimmed white"
+
+[username]
+format = '[ $user]($style_user) '
+style_user = "bold #f38ba8"
+show_always = false
+
+[directory]
+style = "bold #cba4f7"
+truncation_length = 3
+
+[git_branch]
+format = '[ $branch]($style) '
+style = "#89b4fa"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "#f38ba8"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+staged = "[+${count}](green)"
+modified = "[!${count}](yellow)"
+untracked = "[?${count}](dimmed white)"
+
+[cmd_duration]
+min_time = 0
+format = '[ $duration]($style) '
+style = "dimmed #f9e2af"
+
+[status]
+disabled = false
+format = '[$status]($style) '
+style = "bold #f38ba8"
+
+[jobs]
+format = '[ $number]($style) '
+style = "bold #f9e2af"
+
+[python]
+format = '[ $version]($style) '
+style = "#a6e3a1"
+
+[nodejs]
+format = '[ $version]($style) '
+style = "#a6e3a1"
+
+[container]
+format = '[ $name]($style) '
+style = "dimmed #89b4fa"
+
+[character]
+success_symbol = "[❯](bold #a6e3a1)"
+error_symbol = "[❯](bold #f38ba8)"
