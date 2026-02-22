@@ -1,0 +1,6 @@
+*.log
+*.bak
+.DS_Store
+*secret*
+*password*
+*token*
