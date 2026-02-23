@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "modules-left": [],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "temperature", "battery", "network", "pulseaudio"],
+    "clock": {
+        "format": " {:%H:%M %d-%b-%y}"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2,
+        "states": { "warning": 70, "critical": 90 }
+    },
+    "memory": {
+        "format": " {percentage}%",
+        "interval": 2,
+        "states": { "warning": 70, "critical": 90 }
+    },
+    "temperature": {
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80
+    },
+    "battery": {
+        "format": " {capacity}%",
+        "format-charging": " {capacity}%",
+        "states": { "warning": 30, "critical": 20 }
+    },
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ipaddr}",
+        "format-disconnected": " disconnected"
+    },
+    "pulseaudio": {
+        "format": " {volume}%",
+        "format-muted": " MUTED",
+        "states": { "warning": 51, "critical": 81 }
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border-top: 2px solid #313244;
+}
+
+#clock { color: #f5e0dc; padding: 0 10px; }
+#cpu { color: #a6e3a1; padding: 0 10px; }
+#cpu.warning { color: #f9e2af; }
+#cpu.critical { color: #f38ba8; }
+#memory { color: #cba4f7; padding: 0 10px; }
+#memory.warning { color: #f9e2af; }
+#memory.critical { color: #f38ba8; }
+#temperature { color: #89b4fa; padding: 0 10px; }
+#temperature.critical { color: #f38ba8; }
+#battery { color: #a6e3a1; padding: 0 10px; }
+#battery.warning { color: #f9e2af; }
+#battery.critical { color: #f38ba8; }
+#battery.charging { color: #89b4fa; }
+#network { color: #89dceb; padding: 0 10px; }
+#pulseaudio { color: #f38ba8; padding: 0 10px; }
+#pulseaudio.warning { color: #f9e2af; }
+#pulseaudio.critical { color: #a6e3a1; }
