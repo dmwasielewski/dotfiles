@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Waybar
+Exec=bash /home/damianlp/.local/bin/waybar-watch.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
